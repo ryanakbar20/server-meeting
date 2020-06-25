@@ -2,8 +2,7 @@ const apiController = require('../controller/apiController');
 const router = require('express').Router();
 const { uploadSingle } = require('../middleware/multer');
 
-router.get('/landing-page', apiController.landingPage);
-router.get('/detail-page/:id', uploadSingle, apiController.detailPage);
-router.post('/booking-page', uploadSingle, apiController.bookingPage);
-
+// router.get('/landing-page', apiController.landingPage);
+router.post('/data', uploadSingle, apiController.postData);
+router.get('/getData', apiController.getData);
 module.exports = router;

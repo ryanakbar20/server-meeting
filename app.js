@@ -10,7 +10,7 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 mongoose.connect(
-  'mongodb+srv://ryanakbar:Pitathaeng123@cluster0-7ontv.gcp.mongodb.net/db_staycation?retryWrites=true&w=majority',
+  'mongodb://localhost:27017/meeting-card',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
